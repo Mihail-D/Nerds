@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Магазин</title>
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1 hidden>Nerds. Магазин готовых шаблонов.</h1>
+      <div class="header-container">
+        <p class="logo">
+          <a href="index.html"
+            ><img
+              src="img/svg/nerds-logo.svg"
+              alt="Nёrds logo"
+              width="160"
+              height="65"
+          /></a>
+        </p>
+        <nav>
+          <ul class="menu">
+            <li><a href="#">студия</a></li>
+            <li><a href="#">клиенты</a></li>
+            <li class="active-page"><a href="#">магазин</a></li>
+            <li><a href="#">контакты</a></li>
+          </ul>
+          <div class="cart"><a href="#">корзина</a></div>
+        </nav>
+      </div>
+      <h2>Магазин готовых шаблонов</h2>
+    </header>
+
+    <main class="catalog-main">
+      <div class="sidebar">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="filter-item">
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"
+                  >от <input name="min-price" type="text" value="0"
+                /></label>
+                <label class="max-price"
+                  >до <input name="max-price" type="text" value="15 000"
+                /></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="filter-mesh">
+            <b>сетка:</b>
+            <input id="radio-1" type="radio" name="mesh" value="1" checked />
+            <label class="adaptive-radio" for="radio-1">Адаптивная</label>
+
+            <input id="radio-2" type="radio" name="mesh" value="2" />
+            <label class="fixed-radio" for="radio-2">Фиксированная</label>
+
+            <input id="radio-3" type="radio" name="mesh" value="3" />
+            <label class="rubber-radio" for="radio-3">Резиновая</label>
+          </div>
+
+          <div class="filter-features">
+            <b>особенности:</b>
+            <input
+              id="checkbox-features-1"
+              type="checkbox"
+              name="slider"
+              checked
+            />
+            <label class="slider-checkbox" for="checkbox-features-1"
+              >Слайдер</label
+            >
+
+            <input id="checkbox-features-2" type="checkbox" name="advantages" />
+            <label class="advantages-checkbox" for="checkbox-features-2"
+              >Блок преимуществ</label
+            >
+
+            <input
+              id="checkbox-features-3"
+              type="checkbox"
+              name="news"
+              checked
+            />
+            <label class="news-checkbox" for="checkbox-features-3"
+              >Новости</label
+            >
+
+            <input id="checkbox-features-4" type="checkbox" name="gallery" />
+            <label class="gallery-checkbox" for="checkbox-features-4"
+              >Галерея</label
+            >
+
+            <input id="checkbox-features-5" type="checkbox" name="basket" />
+            <label class="basket-checkbox" for="checkbox-features-5"
+              >Корзина</label
+            >
+          </div>
+          <input class="button-filter" type="submit" value="показать" />
+        </form>
+      </div>
+
+      <div class="catalog">
+        <div class="catalog-controls">
+          <div class="catalog-column-left">
+            <span class="catalog-column-tittle">Сортировать:</span>
+          </div>
+          <div class="catalog-column-right">
+            <ul class="sort-type">
+              <li><a class="sort-type-active" href="#">по цене</a></li>
+              <li><a href="#">по типу</a></li>
+              <li><a href="#">по названию</a></li>
+            </ul>
+            <div class="sort-controls">
+              <a
+                href="#"
+                class="sort-icon sort-icon-down sort-icon-active"
+                aria-label="по убыванию"
+              ></a>
+              <a
+                href="#"
+                class="sort-icon sort-icon-up"
+                aria-label="по возрастанию"
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog-item-header">
+            <ul class="item-header-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="catalog-item-image">
+            <div class="catalog-item-card">
+              <b>sedona</b>
+              <p><span>Информационный сайт</span> <span>для туристов</span></p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <div class="catalog-item-header">
+            <ul class="item-header-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="catalog-item-image">
+            <div class="catalog-item-card">
+              <b>pink</b>
+              <p>
+                <span>Lorem ipsum dolor sit</span>
+                <span>amet, consectetur.</span>
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog-item-header">
+            <ul class="item-header-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="catalog-item-image">
+            <div class="catalog-item-card">
+              <b>borodinski</b>
+              <p>
+                <span>Lorem ipsum dolor sit</span>
+                <span>amet, consectetur.</span>
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <div class="catalog-item-header">
+            <ul class="item-header-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="catalog-item-image">
+            <div class="catalog-item-card">
+              <b>mishka</b>
+              <p>
+                <span>Lorem ipsum dolor sit</span>
+                <span>amet, consectetur.</span>
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog-item-header">
+            <ul class="item-header-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="catalog-item-image">
+            <div class="catalog-item-card">
+              <b>A+</b>
+              <p>
+                <span>Lorem ipsum dolor sit</span>
+                <span>amet, consectetur.</span>
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <div class="catalog-item-header">
+            <ul class="item-header-dots">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="catalog-item-image">
+            <div class="catalog-item-card">
+              <b>кваст</b>
+              <p>
+                <span>Lorem ipsum dolor sit</span>
+                <span>amet, consectetur.</span>
+              </p>
+              <a class="button" href="#">9 900 руб.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <ul class="pagination">
+      <li class="pagination-element pagination-element-current"><a>1</a></li>
+      <li class="pagination-element"><a href="#">2</a></li>
+      <li class="pagination-element"><a href="#">3</a></li>
+      <li class="pagination-element next"><a href="#">Следующая</a></li>
+    </ul>
+
+    <div class="map" id="yandex-map">
+      <div class="over-map">
+        <h3>nёrds design studio</h3>
+        <p>
+          <span>191186, Санкт-Петербург,</span>
+          <span>ул. Б. Конюшенная, д. 19/8 </span>
+        </p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a
+          class="button btn-wtite-us"
+          id="btn_write_us"
+          href="https://htmlacademy.ru/intensive/htmlcss"
+          >Напишите нам</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="social">
+        <a
+          class="social-button social-vk"
+          href="https://vk.com/htmlacademy"
+        ></a>
+        <a
+          class="social-button social-fb"
+          href="https://www.facebook.com/htmlacademy"
+        ></a>
+        <a
+          class="social-button social-in"
+          href="https://www.instagram.com/htmlacademy/"
+        ></a>
+      </div>
+
+      <div>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+    </footer>
+
+    <div class="modal-write-us" id="modal">
+      <h2>Напишите нам</h2>
+      <form
+        class="feedback-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <div class="modal-wrapper">
+          <div class="feedback-form-group feedback-form-name">
+            <label for="feedback-form-fullname">Ваше имя:</label>
+            <input
+              type="text"
+              name="fullname"
+              id="feedback-form-fullname"
+              placeholder="Представьтесь, пожалуйста"
+              pattern="^[А-Яа-яЁё\s]+$"
+            />
+          </div>
+          <div class="feedback-form-group feedback-form-email">
+            <label for="feedback-form-email">Ваш e-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="feedback-form-email"
+              placeholder="Для отправки ответа"
+              pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+            />
+          </div>
+        </div>
+        <div class="feedback-form-group">
+          <label for="feedback-form-message">Текст письма:</label>
+          <textarea
+            name="message"
+            id="feedback-form-message"
+            placeholder="В свободной форме"
+          ></textarea>
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button
+        class="modal-close"
+        id="modal_close"
+        type="button"
+        aria-label="закрыть"
+      ></button>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/minify.js"></script>
+  </body>
+</html>
